@@ -15,4 +15,14 @@
     'match': '\\b[0-9]+',
     'name': 'constant.integer'
   }
+  {
+    'comment': 'Double quoted strings'
+    'name': 'string.quoted.double'
+    'begin': '"'
+    'end': '"'
+    'patterns': {
+      'match': '\\.'
+      'name': 'constant.character'
+    }
+  }
 ]
