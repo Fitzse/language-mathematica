@@ -25,4 +25,14 @@
       'name': 'constant.character'
     }
   }
+  {
+    'comment': 'Comments'
+    'name': 'comment'
+    'begin': '\\(\\*'
+    'end': '\\*\\)'
+    'patterns': {
+      'match': '\\.'
+      'name': 'comment'
+    }
+  }
 ]
