@@ -35,4 +35,9 @@
       'name': 'comment'
     }
   }
+  {
+    'comment': 'Assignments'
+    'name': 'keyword.operator'
+    'match': '\\=|:\\=|^:\\=|^\\='
+  }
 ]
