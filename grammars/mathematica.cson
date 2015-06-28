@@ -36,8 +36,13 @@
     }
   }
   {
-    'comment': 'Assignments'
+    'comment': 'Assignment operators'
     'name': 'keyword.operator'
     'match': '\\=|:\\=|^:\\=|^\\='
+  }
+  {
+    'comment': 'Comparison operators'
+    'name': 'keyword.operator'
+    'match': '<|<\\=|>|>\\=|\\!\\=|\\=\\!\\=|\\=\\=|\\=\\=\\='
   }
 ]
