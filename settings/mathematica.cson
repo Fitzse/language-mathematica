@@ -1,0 +1,4 @@
+'.source.mathematica':
+  'editor':
+    'commentStart': '(*'
+    'commentEnd': '*)'
