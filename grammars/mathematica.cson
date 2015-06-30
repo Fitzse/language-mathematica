@@ -52,6 +52,6 @@
         'name': 'variable'
       '2':
         'name':'operator'
-    'match': '\\b([A-Za-z][A-Za-z0-9]*)(:)\\b'
+    'match': '\\b([A-Za-z][A-Za-z0-9]*)(:|_|__|___)'
   }
 ]
