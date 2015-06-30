@@ -46,12 +46,15 @@
     'match': '<|<\\=|>|>\\=|\\!\\=|\\=\\!\\=|\\=\\=|\\=\\=\\='
   }
   {
-    'comment': 'Function input variables'
+    'comment': 'Pattern'
+    'name': 'variable'
     'captures':
       '1':
-        'name': 'variable'
+        'name':'variable'
       '2':
-        'name':'operator'
-    'match': '\\b([A-Za-z][A-Za-z0-9]*)(:|_|__|___)'
+        'name':'keyword.operator'
+      '3':
+        'name':'variable'
+    'match': '(([A-Za-z][A-Za-z0-9]*)(:|_{1,3}\\??))([A-Za-z][A-Za-z0-9]*)?'
   }
 ]
