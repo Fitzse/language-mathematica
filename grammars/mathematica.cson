@@ -46,6 +46,11 @@
     'match': '<|<\\=|>|>\\=|\\!\\=|\\=\\!\\=|\\=\\=|\\=\\=\\='
   }
   {
+    'comment': 'Repeated patterns'
+    'name': 'keyword.operator'
+    'match': '\\.{2,3}'
+  }
+  {
     'comment': 'Function input variable patterns'
     'name': 'variable'
     'captures':
