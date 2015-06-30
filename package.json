@@ -1,9 +1,17 @@
 {
   "name": "language-mathematica",
   "version": "0.0.1",
+  "main": "./lib/main",
   "description": "Syntax highlighting for Mathematica",
   "engines": {
     "atom": "*",
     "node": "*"
-  }
+  },
+  "providedServices": {
+     "autocomplete.provider": {
+       "versions": {
+         "2.0.0": "getProvider"
+       }
+     }
+   }
 }
