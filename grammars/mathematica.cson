@@ -46,7 +46,7 @@
     'match': '<|<\\=|>|>\\=|\\!\\=|\\=\\!\\=|\\=\\=|\\=\\=\\='
   }
   {
-    'comment': 'Pattern'
+    'comment': 'Function input variable patterns'
     'name': 'variable'
     'captures':
       '1':
@@ -56,5 +56,10 @@
       '3':
         'name':'variable'
     'match': '(([A-Za-z][A-Za-z0-9]*)(:|_{1,3}\\??))([A-Za-z][A-Za-z0-9]*)?'
+  }
+  {
+    'comment': 'Blank patterns'
+    'name': 'variable'
+    'match': '_{1,3}([A-Za-z][A-Za-z0-9]*)'
   }
 ]
