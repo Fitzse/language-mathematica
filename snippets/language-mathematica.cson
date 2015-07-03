@@ -1,0 +1,50 @@
+".source.mathematica":
+  "Begin ... `Private`":
+    prefix: "begin"
+    body: '''
+      Begin["${1:\\`Private\\`}"]
+      $0
+      End[]
+    '''
+  BeginPackage:
+    prefix: "package"
+    body: '''
+      BeginPackage["${TM_FILENAME/\\.m$/`/}"]
+      $0
+      EndPackage[]
+    '''
+  Cases:
+    prefix: "cases"
+    body: "Cases[${1:list}, ${2:{$3\\}${4: /; ${5:{$6\\}}}${7: ${8::>} ${9:{$10\\}}}}]$0"
+  "If/Condition/True/False":
+    prefix: "if"
+    body: "If[${1:(* condition *)}, \n\t${2:(* value when true *)},\n\t${3:(* value when false *)}\n]"
+  Map:
+    prefix: "map"
+    body: "Map[\n\t${1:(* function *)}, \n\t${2:(* expression *)}${3:,\n\t${4:(* levelspec *)}}\n]"
+  Module:
+    prefix: "module"
+    body: '''
+      Module[{${1:${2:var}}},
+      	${0:expr}
+      ]
+    '''
+  With:
+    prefix: "with"
+    body: '''
+      With[{${1:var} = ${2:val}},
+      	${0:expr}
+      ]
+    '''
+  SetDelayed:
+    prefix: ":="
+    body: "$1[$2] := $0"
+  "Special: rule":
+    prefix: "r"
+    body: "$1 -> $2$0"
+  "Special: rule delayed":
+    prefix: "rd"
+    body: "$1 :> $2$0"
+  Select:
+    prefix: "select"
+    body: "Select[${1:(* list *)}, ${0:(* filter *)}${2:, ${3:(* first n elemens *)}}]"
