@@ -16,6 +16,11 @@
     'name': 'constant.integer'
   }
   {
+    'comment': 'Slot'
+    'match': "#\\d*",
+    'name': 'keyword.operator'
+  }
+  {
     'comment': 'Constant'
     'match': '\\b(True|False|Null|Automatic|All|None|Infinity)\\b',
     'name': 'constant.language'
