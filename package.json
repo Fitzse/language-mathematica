@@ -1,11 +1,19 @@
 {
   "name": "language-mathematica",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "main": "./lib/main",
-  "description": "Syntax highlighting for Mathematica",
+  "description": "Mathematica (Wolfram Language) support in Atom",
+  "repository":{
+    "type": "git",
+    "url": "https://github.com/Fitzse/language-mathematica.git"
+  },
+  "bugs":{
+    "url": "https://github.com/Fitzse/language-mathematica/issues"
+  },
+  "license":"MIT",
   "engines": {
-    "atom": "*",
-    "node": "*"
+    "atom": ">=1.0.0",
+    "node": ">=0.12.0"
   },
   "providedServices": {
      "autocomplete.provider": {
