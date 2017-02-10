@@ -12,7 +12,7 @@
   }
   {
     'comment': 'Integers'
-    'match': '\\b[0-9]+',
+    'match': '\\b[0-9]+'
     'name': 'constant.integer'
   }
   {
@@ -27,12 +27,12 @@
   }
   {
     'comment': 'Constant'
-    'match': '\\b(True|False|Null|Automatic|All|None|Infinity|Nothing)\\b',
+    'match': '\\b(True|False|Null|Automatic|All|None|Infinity|Nothing)\\b'
     'name': 'constant.language'
   }
   {
     'comment': 'Configuration Variable'
-    'match': '\\$[A-Za-z][A-Za-z0-9]*',
+    'match': '\\$[A-Za-z][A-Za-z0-9]*'
     'name': 'variable.other'
   }
   {
@@ -142,5 +142,10 @@
     'comment': 'Blank patterns'
     'name': 'variable'
     'match': '_{1,3}([A-Za-z][A-Za-z0-9]*)'
+  }
+  {
+    'comment': 'Symbols'
+    'match': '\\b[A-Za-z][A-Za-z0-9]*'
+    'name': 'variable.other'
   }
 ]
