@@ -1,0 +1,28 @@
+{
+  ".source.mathematica": {
+    "editor": {
+      "commentStart": "(*",
+      "commentEnd": "*)"
+    },
+    "autocomplete": {
+      "symbols": {
+        "function": {
+          "selector": ".entity.name.function",
+          "typePriority": 3
+        },
+        "variable": {
+          "selector": ".variable.other, .variable.parameter",
+          "typePriority": 4
+        },
+        "constant": {
+          "selector": ".constant.other",
+          "typePriority": 2
+        },
+        "builtin": {
+          "selector": ".keyword.function.builtin",
+          "typePriority": 5
+        }
+      }
+    }
+  }
+}
