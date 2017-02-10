@@ -11,7 +11,7 @@
           "typePriority": 3
         },
         "variable": {
-          "selector": ".variable.other, .variable.parameter",
+          "selector": ".variable.other, .variable.parameter, .variable.language",
           "typePriority": 4
         },
         "constant": {

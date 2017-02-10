@@ -16,6 +16,11 @@
     'name': 'constant.integer'
   }
   {
+    'comment': 'Built in system configuration variables'
+    'match': '\\$Aborted|\\$ActivationGroupID|\\$ActivationKey|\\$ActivationUserRegistered|\\$AddOnsDirectory|\\$AllowExternalChannelFunctions|\\$AssertFunction|\\$Assumptions|\\$AsynchronousTask|\\$AudioOutputDevices|\\$BaseDirectory|\\$BatchInput|\\$BatchOutput|\\$BoxForms|\\$ByteOrdering|\\$CacheBaseDirectory|\\$Canceled|\\$ChannelBase|\\$CharacterEncoding|\\$CharacterEncodings|\\$CloudBase|\\$CloudConnected|\\$CloudCreditsAvailable|\\$CloudEvaluation|\\$CloudExpressionBase|\\$CloudRootDirectory|\\$CloudSymbolBase|\\$CloudVersion|\\$CloudVersionNumber|\\$CommandLine|\\$CompilationTarget|\\$ConditionHold|\\$ConfiguredKernels|\\$Context|\\$ContextPath|\\$ControlActiveSetting|\\$Cookies|\\$CookieStore|\\$CreationDate|\\$CurrentLink|\\$DateStringFormat|\\$DefaultAudioOutputDevice|\\$DefaultFont|\\$DefaultFrontEnd|\\$DefaultImagingDevice|\\$DefaultLocalBase|\\$DefaultPath|\\$Display|\\$DisplayFunction|\\$DisplayName|\\$DistributedContexts|\\$DynamicEvaluation|\\$Echo|\\$EmbedCodeEnvironments|\\$EmbeddableServices|\\$EntityStores|\\$Epilog|\\$EvaluationCloudObject|\\$EvaluationEnvironment|\\$ExportFormats|\\$Failed|\\$FinancialDataSource|\\$FontFamilies|\\$FormatType|\\$FrontEnd|\\$FrontEndSession|\\$GeoEntityTypes|\\$GeoLocation|\\$GeoLocationCity|\\$GeoLocationCountry|\\$GeoLocationPrecision|\\$GeoLocationSource|\\$HistoryLength|\\$HomeDirectory|\\$HTMLExportRules|\\$HTTPCookies|\\$HTTPRequest|\\$IgnoreEOF|\\$ImageFormattingWidth|\\$ImagingDevice|\\$ImagingDevices|\\$ImportFormats|\\$InitialDirectory|\\$Input|\\$InputFileName|\\$InputStreamMethods|\\$Inspector|\\$InstallationDate|\\$InstallationDirectory|\\$InterfaceEnvironment|\\$InterpreterTypes|\\$IterationLimit|\\$KernelCount|\\$KernelID|\\$Language|\\$LaunchDirectory|\\$LibraryPath|\\$LicenseExpirationDate|\\$LicenseID|\\$LicenseProcesses|\\$LicenseServer|\\$LicenseSubprocesses|\\$LicenseType|\\$Line|\\$Linked|\\$LinkSupported|\\$LoadedFiles|\\$LocalBase|\\$LocalSymbolBase|\\$MachineAddresses|\\$MachineDomain|\\$MachineDomains|\\$MachineEpsilon|\\$MachineID|\\$MachineName|\\$MachinePrecision|\\$MachineType|\\$MaxExtraPrecision|\\$MaxLicenseProcesses|\\$MaxLicenseSubprocesses|\\$MaxMachineNumber|\\$MaxNumber|\\$MaxPiecewiseCases|\\$MaxPrecision|\\$MaxRootDegree|\\$MessageGroups|\\$MessageList|\\$MessagePrePrint|\\$Messages|\\$MinMachineNumber|\\$MinNumber|\\$MinorReleaseNumber|\\$MinPrecision|\\$ModuleNumber|\\$NetworkLicense|\\$NewMessage|\\$NewSymbol|\\$Notebooks|\\$NumberMarks|\\$Off|\\$OperatingSystem|\\$Output|\\$OutputForms|\\$OutputSizeLimit|\\$OutputStreamMethods|\\$Packages|\\$ParentLink|\\$ParentProcessID|\\$PasswordFile|\\$PatchLevelID|\\$Path|\\$PathnameSeparator|\\$PerformanceGoal|\\$Permissions|\\$PermissionsGroupBase|\\$PhoneNumber|\\$PipeSupported|\\$PlotTheme|\\$Post|\\$Pre|\\$PreferencesDirectory|\\$PrePrint|\\$PreRead|\\$PrintForms|\\$PrintLiteral|\\$Printout3DPreviewer|\\$ProcessID|\\$ProcessorCount|\\$ProcessorType|\\$ProductInformation|\\$ProgramName|\\$RandomState|\\$RecursionLimit|\\$RegisteredDeviceClasses|\\$RegisteredUserName|\\$ReleaseNumber|\\$RequesterAddress|\\$RequesterWolframID|\\$RequesterWolframUUID|\\$RootDirectory|\\$ScheduledTask|\\$ScriptCommandLine|\\$ScriptInputString|\\$Services|\\$SessionID|\\$SetParentLink|\\$SharedFunctions|\\$SharedVariables|\\$SMSDestination|\\$SoundDisplay|\\$SoundDisplayFunction|\\$SourceLink|\\$SuppressInputFormHeads|\\$SynchronousEvaluation|\\$SyntaxHandler|\\$System|\\$SystemCharacterEncoding|\\$SystemID|\\$SystemMemory|\\$SystemShell|\\$SystemTimeZone|\\$SystemWordLength|\\$TemplatePath|\\$TemporaryDirectory|\\$TemporaryPrefix|\\$TextStyle|\\$TimedOut|\\$TimeUnit|\\$TimeZone|\\$TimeZoneEntity|\\$TopDirectory|\\$TraceOff|\\$TraceOn|\\$TracePattern|\\$TracePostAction|\\$TracePreAction|\\$UnitSystem|\\$Urgent|\\$UserAddOnsDirectory|\\$UserAgentLanguages|\\$UserAgentMachine|\\$UserAgentName|\\$UserAgentOperatingSystem|\\$UserAgentString|\\$UserAgentVersion|\\$UserBaseDirectory|\\$UserDocumentsDirectory|\\$UserName|\\$Version|\\$VersionNumber|\\$WolframID|\\$WolframUUID'
+    'name': 'variable.language'
+  }
+  {
     'comment': 'Slot'
     'match': "#\\d*",
     'name': 'keyword.operator'
@@ -28,7 +33,7 @@
   {
     'comment': 'Configuration Variable'
     'match': '\\$[A-Za-z][A-Za-z0-9]*',
-    'name': 'constant.other'
+    'name': 'variable.other'
   }
   {
     'comment': 'Double quoted strings'
@@ -52,7 +57,7 @@
   }
   {
     'comment': 'Comments'
-    'name': 'comment'
+    'name': 'comment.block'
     'begin': '\\(\\*'
     'end': '\\*\\)'
     'patterns': {
