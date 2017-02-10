@@ -8,19 +8,19 @@
       "symbols": {
         "function": {
           "selector": ".entity.name.function",
-          "typePriority": 3
+          "typePriority": 1
         },
         "variable": {
           "selector": ".variable.other, .variable.parameter, .variable.language",
-          "typePriority": 4
+          "typePriority": 2
         },
         "constant": {
           "selector": ".constant.other, .constant.language",
-          "typePriority": 2
+          "typePriority": 4
         },
         "builtin": {
           "selector": ".keyword.function.builtin",
-          "typePriority": 5
+          "typePriority": 3
         }
       }
     }
