@@ -26,6 +26,11 @@
     'name': 'constant.language'
   }
   {
+    'comment': 'Configuration Variable'
+    'match': '\\$[A-Za-z][A-Za-z0-9]*',
+    'name': 'constant.other'
+  }
+  {
     'comment': 'Double quoted strings'
     'name': 'string.quoted.double'
     'begin': '"'
