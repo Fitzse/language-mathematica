@@ -22,7 +22,7 @@
   }
   {
     'comment': 'Constant'
-    'match': '\\b(True|False|Null|Automatic|All|None|Infinity)\\b',
+    'match': '\\b(True|False|Null|Automatic|All|None|Infinity|Nothing)\\b',
     'name': 'constant.language'
   }
   {
