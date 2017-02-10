@@ -15,7 +15,7 @@
           "typePriority": 4
         },
         "constant": {
-          "selector": ".constant.other",
+          "selector": ".constant.other, .constant.language",
           "typePriority": 2
         },
         "builtin": {
