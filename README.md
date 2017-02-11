@@ -1,7 +1,7 @@
 #Overview
 This package defines a grammar for the Atom text editor which describes the Wolfram Language (used in Mathematica).
 
-The list of built-in keywords was calculated using all the symbol names in the *System`* context of Mathematica 10.1.
+The list of built-in keywords was calculated using all the symbol names in the *System`* context of Mathematica 11.0.1.
 
 #Contributing
 Contributions are greatly appreciated. Please fork this repository and open a pull request to add snippets, make grammar
