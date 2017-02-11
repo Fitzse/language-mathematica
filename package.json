@@ -15,10 +15,14 @@
     "atom": ">=1.0.0",
     "node": ">=0.12.0"
   },
+  "dependencies": {
+    "fuzzaldrin": "^2.0",
+    "underscore-plus": "^1.6.6"
+  },
   "providedServices": {
     "autocomplete.provider": {
       "versions": {
-        "2.0.0": "getProvider"
+        "2.0.0": "getAutocompleteProvider"
       }
     }
   }
