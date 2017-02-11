@@ -8,6 +8,6 @@ Contributions are greatly appreciated. Please fork this repository and open a pu
 tweaks, etc.
 
 #Useful Links
-- [Wolfram Input Syntax Tutorial](http://http://reference.wolfram.com/language/tutorial/InputSyntax.html)
+- [Wolfram Input Syntax Tutorial](http://reference.wolfram.com/language/tutorial/InputSyntax.html)
 - [Defining Language Grammars](http://manual.macromates.com/en/language_grammars.html)
 - [Atom Editor](http://atom.io)
