@@ -14,10 +14,6 @@
           "selector": ".variable.other, .variable.parameter, .variable.language",
           "typePriority": 2
         },
-        "constant": {
-          "selector": ".constant.other, .constant.language",
-          "typePriority": 4
-        },
         "builtin": {
           "selector": ".keyword.function.builtin",
           "typePriority": 3
